@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./text_voice.css">
+    <title>Text to voice</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h2>Text</h2>
+        <h2>2</h2>
+        <h2>Voice</h2>
+    </div>
+    <div class="selectBox">
+        <label for="voices">select voices</label>
+        <select name="voices" id="voices"></select>
+    </div>
+    <main>
+
+
+        <div class="container">
+            <textarea name="" id="textarea" cols="50" rows="8" placeholder="Type here . . ."></textarea>
+            <div class="controll-btn">
+                <div class="volume-input">
+                    <legend for="volume">Volume</legend>
+                    <input type="range" value="1" name="volume" id="volume" min="0" max="1" step="0.1">
+                    <span id="volumeValue">1.0</span>
+                </div>
+                <div class="rate-input">
+                    <legend for="rate">Rate</legend>
+                    <input type="range" value="1" name="rate" id="rate" min="0" max="10" step="1">
+                    <span id="rateValue" >1.0</span>
+                </div>
+                <div class="volume-input">
+                    <legend for="pitch">Pitch</legend>
+                    <input type="range" value="1" name="pitch" id="pitch" min="0" max="2" step="0.5">
+                    <span id="pitchValue">1.0</span>
+                </div>
+            </div>
+            <div class="bottom-btn">
+                <button class="play">Play</button>
+                <button class="pause">Pause</button>
+                <button class="resume">Resume</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <script src="./text_voice.js"></script>
+</body>
+
+</html>

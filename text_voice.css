@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css2?family=Macondo&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Handlee&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #e8ffeb, #b1d7b6, #7db083, #488952, #006423);
+}
+
+.heading {
+    position: relative;
+    height: 20%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Macondo', display;
+    text-shadow: 0 0 3px rgb(255, 76, 76);
+    font-size: 2em;
+    letter-spacing: 7px;
+}
+
+.heading h2:nth-child(2) {
+    position: absolute;
+    margin-left:120px;
+    font-size: 2.1em;
+    font-family: 'Crafty Girls', handwriting;
+}
+
+.selectBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* justify-content:center; */
+    margin-top: 20px;
+}
+
+.selectBox label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Handlee', handwriting;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+select {
+    position: relative;
+    height: 30px;
+    width: 50%;
+    background: rgba(0, 124, 37, 0.627);
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    outline: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+select option{
+    color: white;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+    background: rgba(0, 124, 37, 0.727);
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+main {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}
+
+textarea {
+    background: rgba(245, 245, 245, 0.24);
+    border-radius: 9px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.44);
+    resize: none;
+    font-size: 19px;
+}
+
+textarea:focus {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.64);
+    background: rgba(100, 100, 100, 0.24);
+    transition: .6s;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+    transition: .3s;
+}
+
+.container .controll-btn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controll-btn legend {
+    font-weight: bold;
+    font-family: 'Handlee', handwriting;
+    letter-spacing: 2px;
+}
+
+.controll-btn input[type='range'] {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 80%;
+    background: linear-gradient(to right, green, lime);
+    border-radius: 10px;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 10px;
+    border-radius:52% 48% 51% 49% / 87% 88% 12% 13% ;
+    background: rgb(15, 90, 15);
+    cursor: pointer;
+    margin-top: 30px;
+}
+/* input[type='range']:focus::-webkit-slider-thumb{} */
+.controll-btn span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.container .bottom-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.bottom-btn button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 10px black;
+    font-family: 'Handlee', handwriting;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.bottom-btn button:nth-child(1){
+    background: rgb(56, 252, 105);
+}
+.bottom-btn button:nth-child(2){
+    background: rgb(249, 252, 56);
+}
+.bottom-btn button:nth-child(3){
+    background: rgb(56, 196, 252);
+}
+.bottom-btn button:nth-child(4){
+    background: rgb(252, 95, 56);
+}
+
+.bottom-btn button:hover{
+    box-shadow: 0 0 5px whitesmoke;
+}
